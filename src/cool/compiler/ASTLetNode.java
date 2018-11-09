@@ -17,7 +17,9 @@ public class ASTLetNode extends ASTBaseNode {
 		super.printSpaces(depth + 1);
 		System.out.println(type);
 		
-		expr.print(depth + 1);
+		if (expr != null) {
+			expr.print(depth + 1);
+		}
 	}
 
 }
